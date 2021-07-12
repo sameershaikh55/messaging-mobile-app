@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Events</title>
+    <!-- EXTERNAL LINKS START -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <!-- EXTERNAL LINKS END -->
+  </head>
+
+  <body>
+    <div class="page_container">
+      <div class="container-fluid px-3">
+
+        <!-- == HEADER START == -->
+        <div class="text-center py-4">
+          <img class="dpPlaceholder" src="assets/images/dpPlaceholder.svg" alt="" />
+          <h3 class="fw-bold mt-2">SingleParentLife</h3>
+
+          <div class="d-flex align-items-center mt-4">
+            <img src="assets/images/back.svg" alt="">
+            <div class="absolutePosi position-absolute">
+              <h4 class="mb-0 fw-bold">Report User</h4>
+            </div>
+          </div>
+        </div>
+        <!-- == HEADER END == -->
+
+        <!-- == BODY START == -->
+        <div class="row px-2 mt-3">
+          <div class="col-10 mx-auto">
+            <h5>Reason?</h5>
+            <div class="mt-2 ms-4">
+              <div class="d-flex align-items-center mb-1">
+                <input type="radio" id="spam" name="fav_language" value="spam">
+                  <label class="ms-2 mb-0" for="spam">Spam</label>
+              </div>
+              <div class="d-flex align-items-center mb-1">
+
+                <input type="radio" id="scam" name="fav_language" value="scam">
+                  <label class="ms-2 mb-0" for="scam">Scam</label>
+              </div>
+              <div class="d-flex align-items-center mb-1">
+
+                <input type="radio" id="abuse" name="fav_language" value="abuse">
+                  <label class="ms-2 mb-0" for="abuse">Abuse</label>
+              </div>
+              <div class="d-flex align-items-center mb-1">
+
+                <input type="radio" id="Inappropriate/offensive posts" name="fav_language"
+                  value="Inappropriate/offensive posts">
+                  <label class="ms-2 mb-0" for="Inappropriate/offensive posts">Inappropriate/offensive posts</label>
+              </div>
+              <div class="d-flex align-items-center mb-1">
+
+                <input type="radio" id="Impersonation" name="fav_language" value="Impersonation">
+                  <label class="ms-2 mb-0" for="Impersonation">Impersonation</label>
+              </div>
+              <div class="d-flex align-items-center mb-1">
+
+                <input type="radio" id="Other (write below)" name="fav_language" value="Other (write below)">
+                  <label class="ms-2 mb-0" for="Other (write below)">Other (write below)</label>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <textarea name="" id="" class="my-4 w-100" rows="12"></textarea>
+            <button onclick="popUp()"
+              class="btnBg w-100 text-white px-4 py-2 rounded-pill border h5 fw-bold mb-0">Send</button>
+          </div>
+
+        </div>
+        <!-- == BODY END == -->
+      </div>
+
+
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <!-- == BOTTOM NAVIGATION START == -->
+    <div class="btnBg position-fixed left-0 bottom-0 w-100 d-flex justify-content-around py-3">
+      <img src="assets/images/navigation/n1.svg" alt="">
+      <img src="assets/images/navigation/n2.svg" alt="">
+      <img src="assets/images/navigation/n3.svg" alt="">
+      <img src="assets/images/navigation/n4.svg" alt="">
+      <img src="assets/images/navigation/n5.svg" alt="">
+    </div>
+    <!-- == BOTTOM NAVIGATION END == -->
+
+
+    <!-- == POP-UP START == -->
+    <div onclick="popUpHide()" class="pop-up_container">
+      <div class="pop-up_inner bg-white w-75">
+        <p class="h2 fw-light text-center mb-0 py-4 px-1 border border-2">Your report has
+          been submitted.
+          The System Administrator
+          will email you
+          to update on investigation
+          on this matter.</p>
+      </div>
+    </div>
+    <!-- == POP-UP END == -->
+    </div>
+
+    <script>
+      function popUp()
+      {
+        document.querySelector('.pop-up_container').style.display = "flex";
+      }
+      function popUpHide()
+      {
+        document.querySelector('.pop-up_container2').style.display = "none";
+      }
+    </script>
+  </body>
+
+</html>

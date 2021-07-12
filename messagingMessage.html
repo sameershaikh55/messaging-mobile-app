@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- EXTERNAL LINKS START -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <!-- EXTERNAL LINKS END -->
+    <title>Profile Message</title>
+  </head>
+
+  <body>
+    <div class="page_container">
+      <div class="container-fluid px-3">
+
+        <!-- == HEADER START == -->
+        <div class="text-center py-4">
+          <img class="dpPlaceholder" src="assets/images/dpPlaceholder.svg" alt="" />
+          <h3 class="fw-bold mt-2">SingleParentLife</h3>
+
+          <div class="d-flex justify-content-between mt-4">
+            <img src="assets/images/back.svg" alt="">
+            <h4 class="fw-bold mb-0">Adam G.'s Profile</h4>
+            <img onclick="popUp()" src="assets/images/exel.svg" alt="">
+          </div>
+        </div>
+        <!-- == HEADER END == -->
+
+        <!-- == BODY START == -->
+        <div class="sentMessage2 d-flex mt-3 px-3">
+          <img class="avtar rounded-circle" src="assets/images/dpPlaceholder.svg" alt="placeholder">
+          <div class="message text-white ms-2 ps-3 p-2 mb-0 h5 fw-bold">
+            Hi </div>
+        </div>
+        <div class="themeColor text-center mt-2">Monday, 2:00pm</div>
+        <!-- == BODY END == -->
+      </div>
+
+      <!-- == POP-UP START == -->
+      <div onclick="popUpHide()" class="pop-up_container2">
+        <div class="pop-up_inner w-100 py-2">
+          <p class="h5 fw-light text-white text-center mb-0 py-2">
+            Unmatch Only
+          </p>
+          <p class="h5 fw-light text-white text-center mb-0 py-2">
+            Unmatch & Report
+          </p>
+          <p class="h5 fw-light text-white text-center mb-0 py-2">
+            Block
+          </p>
+        </div>
+      </div>
+      <!-- == POP-UP END == -->
+
+      <!-- == INPUT MESSAGE START == -->
+      <div class="btnBg position-fixed w-100 bottom-0 left-0 py-2 d-flex px-2">
+        <input class="w-100 py-1 px-3" type="text" name="" id="" placeholder="Say something…">
+        <img class="ms-2" src="assets/images/sentIcon.svg" alt="">
+      </div>
+      <!-- == INPUT MESSAGE END == -->
+    </div>
+    <script>
+      function popUp()
+      {
+        document.querySelector('.pop-up_container2').style.display = "flex";
+      }
+      function popUpHide()
+      {
+        document.querySelector('.pop-up_container2').style.display = "none";
+      }
+    </script>
+  </body>
+
+</html>

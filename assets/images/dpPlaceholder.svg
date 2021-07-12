@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="65" viewBox="0 0 64 65">
+  <g id="Logo" transform="translate(-141 -219)">
+    <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(141 219)" fill="#fff" stroke="#707070" stroke-width="1">
+      <ellipse cx="32" cy="32.5" rx="32" ry="32.5" stroke="none"/>
+      <ellipse cx="32" cy="32.5" rx="31.5" ry="32" fill="none"/>
+    </g>
+    <line id="Line_1" data-name="Line 1" x2="33.99" y2="51.501" transform="translate(156.417 223.999)" fill="none" stroke="#707070" stroke-width="1"/>
+    <path id="Path_1" data-name="Path 1" d="M0,54.515,30.272,5.963,33.99,0" transform="translate(156.417 223.999)" fill="none" stroke="#707070" stroke-width="1"/>
+  </g>
+</svg>
