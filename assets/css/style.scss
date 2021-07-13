@@ -62,7 +62,7 @@ $themeColor: #707070;
 	color: $themeColor;
 }
 
-.btnBorder{
+.btnBorder {
 	border: 1px solid $themeColor;
 }
 
@@ -72,7 +72,7 @@ input {
 	}
 }
 
-.absolutePosi{
+.absolutePosi {
 	left: 50%;
 	transform: translateX(-50%);
 }
@@ -210,7 +210,7 @@ input {
 // MATCHED PROFILE PAGE END
 
 // REPORT USER START
-input[type= "radio"] {
+input[type="radio"] {
 	height: 18px;
 	width: 18px;
 }

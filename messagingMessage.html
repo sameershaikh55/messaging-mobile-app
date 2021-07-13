@@ -23,7 +23,9 @@
           <h3 class="fw-bold mt-2">SingleParentLife</h3>
 
           <div class="d-flex justify-content-between mt-4">
-            <img src="assets/images/back.svg" alt="">
+            <a href="messaging.html">
+              <img src="assets/images/back.svg" alt="">
+            </a>
             <h4 class="fw-bold mb-0">Adam G.'s Profile</h4>
             <img onclick="popUp()" src="assets/images/exel.svg" alt="">
           </div>
@@ -42,16 +44,20 @@
 
       <!-- == POP-UP START == -->
       <div onclick="popUpHide()" class="pop-up_container2">
-        <div class="pop-up_inner w-100 py-2">
+        <div class="pop-up_inner w-100 py-2 text-center">
           <p class="h5 fw-light text-white text-center mb-0 py-2">
             Unmatch Only
           </p>
-          <p class="h5 fw-light text-white text-center mb-0 py-2">
-            Unmatch & Report
-          </p>
-          <p class="h5 fw-light text-white text-center mb-0 py-2">
-            Block
-          </p>
+          <div class="py-2">
+            <a href="reportUser.html" class="h5 fw-light text-white text-center mb-0 text-decoration-none">
+              Unmatch & Report
+            </a>
+            </div>
+            <div>
+              <a href="blockUser.html" class="h5 fw-light text-white text-center mb-0 py-2 text-decoration-none">
+                Block
+              </a>
+              </div>
         </div>
       </div>
       <!-- == POP-UP END == -->
